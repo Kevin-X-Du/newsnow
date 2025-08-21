@@ -2,6 +2,7 @@ services:
   newsnow:
     image: ghcr.io/ourongxing/newsnow:latest
     container_name: newsnow
+    restart: unless-stopped # Added restart policy
     ports:
       - '4444:4444'
     volumes:
